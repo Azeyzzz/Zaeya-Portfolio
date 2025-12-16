@@ -1,0 +1,150 @@
+:root{
+    --primary-color: purple;
+}
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+   /* font-family: ; */
+}
+.timeline-wrapper{
+    max-width: 100vw;
+    height: 88vh;
+
+   /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow-X: hidden;
+}
+
+.timeline {
+    height: .12rem;
+    padding: 0 4rem;
+    background-color: purple; /*border of the timeline*/
+    list-style-type: none;
+
+    --scale: 1;
+
+    display: flex;
+}
+.timeline li {
+    position: relative;
+    width: 20rem;
+    background-color: pink;
+}
+.timeline li::before, 
+.timeline li:after,
+.timeline li .title,
+.info{
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(var(--scale));
+    transition: .5s ease;
+}
+.timeline li::before {
+    top: 1rem;
+
+    display: inline-block;
+    width: 0.12rem;
+    height: 1rem;
+    background-color: pink;
+}
+.timeline li:nth-child(even)::before{
+    top: -1rem;
+}
+
+.timeline li:hover::before{
+    background-color: var(--var-color);
+
+}
+
+.timeline li::after{
+    content: attr(data-semester);
+    top: -3.4rem;
+}
+.timeline li:nth-child(odd)::after{
+    top: 3.4rem;
+}
+
+.timeline li:hover:after,
+.timeline li .title{
+    color: var(--primary-color);
+}
+.timeline li .title{
+    top: 2.4rem;
+
+    font: 600 1.1rem 'poppins', sans-serif;
+    white-space: pre;
+
+    opacity: 0;
+}
+
+.timeline li:nth-child(odd) >.title{
+    top: -2.4rem;
+}
+.timeline li:hover .title{
+    opacity: 1;
+}
+.info {
+    width: 1.3rem;
+    height: 1.3rem;
+    background-color: #888;
+    color: white;
+    border-radius: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    overflow: hidden;
+}
+
+.timeline li:hover .info {
+    background-color: var(--primary-color);
+    --scale: 1.2;
+    cursor: pointer;
+}
+
+.info.show {
+/*
+    width: 22rem;
+    height: 22rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-image: linear-gradient(45deg, var(--primary-color), violet);
+
+    box-shadow: 0 .1rem .4rem #0004;
+
+    z-index: 100;
+*/
+}
+
+.info h3{
+    text-transform: capitalize;
+}
+
+.info p{
+    background-color: #fff3;
+    padding: 1rem;
+    border-radius: 1rem;
+
+    margin-left: 0.7rem;
+}
+
+.info.show p{
+    margin-left: 0;   
+}
+
+.info .close{
+    align-self: flex-start;
+    background-color: skyblue;
+
+    padding: .5rem .8rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+}
