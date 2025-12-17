@@ -1,3 +1,4 @@
+/* Timeline code was learned from CodingDesign "Simple Interactive Timeline Using Vanilla Javascript" */
 :root{
     --primary-color: purple;
 }
@@ -8,7 +9,12 @@
     box-sizing: border-box;
    /* font-family: ; */
 }
+.timeline-wrapper::-webkit-scrollbar{
+    display: none;
+}
+
 .timeline-wrapper{
+    position: relative;
     max-width: 100vw;
     height: 88vh;
 
@@ -17,10 +23,11 @@
     justify-content: center;
     align-items: center;
 
-    overflow-X: hidden;
+    overflow-X: auto;
 }
 
 .timeline {
+    position: absolute;
     height: .12rem;
     padding: 0 4rem;
     background-color: purple; /*border of the timeline*/
@@ -30,9 +37,9 @@
 
     display: flex;
 }
-.timeline li {
+.timeline li { /*adjusts the dots on the timeline */
     position: relative;
-    width: 20rem;
+    width: 20rem; 
     background-color: pink;
 }
 .timeline li::before, 
@@ -102,18 +109,20 @@
     justify-content: space-around;
 
     overflow: hidden;
+    transition: 1s ease;
 }
 
 .timeline li:hover .info {
     background-color: var(--primary-color);
     --scale: 1.2;
     cursor: pointer;
+    z-index: 100;
 }
 
 .info.show {
-/*
+
     width: 22rem;
-    height: 22rem;
+    height: auto;
     border-radius: 1rem;
     padding: 1rem;
     background-image: linear-gradient(45deg, var(--primary-color), violet);
@@ -121,7 +130,7 @@
     box-shadow: 0 .1rem .4rem #0004;
 
     z-index: 100;
-*/
+
 }
 
 .info h3{
@@ -130,7 +139,8 @@
 
 .info p{
     background-color: #fff3;
-    padding: 1rem;
+    padding: .5rem;
+    margin-bottom: 1rem;
     border-radius: 1rem;
 
     margin-left: 0.7rem;
