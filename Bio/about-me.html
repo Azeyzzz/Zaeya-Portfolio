@@ -6,15 +6,25 @@
     <meta charset="utf-8">
     <title>About Me</title>
     <link href="/Bio/about-me.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Spectral' rel='stylesheet'>
     <script src="/Bio/about-me.js"></script>
 </head>
+<style>
+    button, body{
+        font-family: 'Spectral'; font-size: 22px;
+    }
+</style>
 <header>
-            <a href="/Home/home.html"><button>Home</button></a>
-            <a href="/Experience/work-ex.html"><button>Work Expierience</button></a>
-            <a href="/Experience/education.html"><button>Education</button></a>
-            <a href="/Portfolio/portfolio-hub.html"><button>My Portfolio</button></a>
+    <ul>
+        <li><a href="/Home/home.html">Home</a></li>
+        <li><a class="active" href="/Bio/about-me.html">About Me</a></li>
+        <li><a href="/Experience/work-ex.html">Work Expierience</a></li>
+        <li><a href="/Experience/education.html">Education</a></li>
+        <li><a href="/Portfolio/portfolio-hub.html">My Portfolio</a></li>
+    </ul>
 </header>
 <body>
+    <main class="mc">
     <section class="about-intro">
         <h1>Hi my name is Zaeya DeBenedetti!</h1>
         I am currently a junior at the University of North Carolina at Charlotte. 
@@ -63,5 +73,7 @@
 
         </div>
     </div>
+    </section>
+</main>
 </body>
 </html>

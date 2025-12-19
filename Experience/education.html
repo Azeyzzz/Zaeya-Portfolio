@@ -7,14 +7,24 @@
     <title>My Education</title>
     <link href="/Experience/education.css" rel="stylesheet">
     <script src="/Experience/education.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Spectral' rel='stylesheet'>
 </head>
+<style>
+    button, body{
+        font-family: 'Spectral'; font-size: 22px;
+    }
+</style>
 <header>
-    <a href="/Home/home.html"><button>Home</button></a>
-    <a href="/Bio/about-me.html"><button>About Me</button></a>
-    <a href="/Experience/work-ex.html"><button>Work Expierience</button></a>
-    <a href="/Portfolio/portfolio-hub.html"><button>My Portfolio</button></a>
+    <ul>
+        <li><a href="/Home/home.html">Home</a></li>
+        <li><a href="/Bio/about-me.html">About Me</a></li>
+        <li><a href="/Experience/work-ex.html">Work Expierience</a></li>
+        <li><a class="active" href="/Experience/education.html">Education</a></li>
+        <li><a href="/Portfolio/portfolio-hub.html">My Portfolio</a></li>
+    </ul>
 </header>
 <body>
+    <main class="mc">
     <section class="title">
         <h1>My College Education So Far</h1>
     </section>
@@ -87,5 +97,6 @@
                 </div>
             </li>
         </ul>
+    </main>
 </body>
 </html>
