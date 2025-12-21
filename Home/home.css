@@ -33,3 +33,40 @@ body{
     border-style: solid;
     overflow: auto;
 }
+.intro{
+    display: flex;
+}
+.exp-intro{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.port-intro{
+    display: flex;
+}
+.intro-image img{
+    height: 40rem;
+    width:30rem;
+    float: right;
+    border: 1px;
+    border-style: solid;
+}
+section{
+    border: 1px;
+    border-style: solid;
+    overflow:hidden;
+}
+body h1,h2,p,small{
+    padding-left: 10px;
+}
+h1{
+    font-size: 70px;
+}
+h2{
+    font-size: 50px;
+}
+p{
+    font-size: 30px;
+}
+a{
+    padding-left: 30px;
+}
