@@ -33,9 +33,23 @@ body{
     border-style: solid;
     overflow: auto;
 }
+section{
+    border: 1px;
+    border-style: solid;
+    overflow:hidden;
+}
+body h1,h2,p,small{
+    padding-left: 10px;
+}
+.schools h1{
+    margin-bottom: 16px;
+}
+.schools{
+    display: flex;
+}
 /* Timeline code was learned from CodingDesign "Simple Interactive Timeline Using Vanilla Javascript" */
 :root{
-    --primary-color: purple;
+    --primary-color: #D4C1D3;
 }
 * {
     margin: 0;
@@ -65,7 +79,7 @@ body{
     position: absolute;
     height: .12rem;
     padding: 0 4rem;
-    background-color: purple; /*border of the timeline*/
+    background-color: black; /*border of the timeline*/
     list-style-type: none;
 
     --scale: 1;
@@ -74,8 +88,8 @@ body{
 }
 .timeline li { /*adjusts the dots on the timeline */
     position: relative;
-    width: 20rem; 
-    background-color: pink;
+    width: 30rem; 
+    background-color: black;
 }
 .timeline li::before, 
 .timeline li:after,
@@ -160,7 +174,7 @@ body{
     height: auto;
     border-radius: 1rem;
     padding: 1rem;
-    background-image: linear-gradient(45deg, var(--primary-color), violet);
+    background-image: linear-gradient(45deg, var(--primary-color), indigo);
 
     box-shadow: 0 .1rem .4rem #0004;
 
