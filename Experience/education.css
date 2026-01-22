@@ -44,8 +44,27 @@ body h1,h2,p,small{
 .schools h1{
     margin-bottom: 16px;
 }
-.schools{
+.schools h1, p, address, h3{
+    padding-left: 5px;
+    padding-top: 20px;
+}
+.schools img{
+    height: 400px;
+    width:  700px;
+}
+.uncc {
     display: flex;
+    align-items: flex-start;
+}
+.uncc-text{
+    flex: 1;
+}
+.mitty{
+    display: flex;
+    align-items: flex-start;
+}
+.mitty-text{
+    flex: 1;
 }
 /* Timeline code was learned from CodingDesign "Simple Interactive Timeline Using Vanilla Javascript" */
 :root{
