@@ -45,3 +45,7 @@ section {
   border-style: solid;
   overflow: hidden;
 }
+.work-photo img {
+  height: 100px;
+  width: 100px;
+}

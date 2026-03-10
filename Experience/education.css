@@ -1,228 +1,239 @@
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #D4C1D3;
-    display: flex;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #d4c1d3;
+  display: flex;
 }
-ul li a{
-    display: block;
-    color: black;
-    padding: 14px 16px;
-    text-decoration: none;
+ul li a {
+  display: block;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
 }
-ul li a:hover{
-    background-color: #AFB1DA;
+ul li a:hover {
+  background-color: #afb1da;
 }
 ul li a.active {
-    background-color: #AFB1DA;
+  background-color: #afb1da;
 }
-.nav-bar{
-    padding-top: 0;
-    width: 100%;
-    float: left;
+.nav-bar {
+  padding-top: 0;
+  width: 100%;
+  float: left;
 }
-body{
-    background-color: #f3e7e4;
-    color: black;
-    margin: 0;
-    padding: 0;
+body {
+  background-color: #f3e7e4;
+  color: black;
+  margin: 0;
+  padding: 0;
 }
-.mc{
-    border: 1px;
-    border-style: solid;
-    overflow: auto;
+.mc {
+  border: 1px;
+  border-style: solid;
+  overflow: auto;
 }
-section{
-    border: 1px;
-    border-style: solid;
-    overflow:hidden;
+section {
+  border: 1px;
+  border-style: solid;
+  overflow: hidden;
 }
-body h1,h2,p,small{
-    padding-left: 10px;
+body h1,
+h2,
+p,
+small {
+  padding-left: 10px;
 }
-.schools h1{
-    margin-bottom: 16px;
+.schools h1 {
+  margin-bottom: 16px;
 }
-.schools h1, p, address, h3{
-    padding-left: 5px;
-    padding-top: 20px;
+.schools h1,
+p,
+address,
+h3 {
+  padding-left: 10px;
+  padding-top: 20px;
 }
-.schools img{
-    height: 400px;
-    width:  700px;
+.schools img {
+  height: auto;
+  width: 50vw;
+  display: block;
+  border-left: 5px;
+  border-style: solid;
 }
-.uncc {
-    display: flex;
-    align-items: flex-start;
+.grad-uncc,
+.uncc,
+.mitty {
+  display: flex;
+  align-items: flex-start;
+  border-right: 3px;
+  border-bottom: 3px;
+  border-style: solid;
 }
-.uncc-text{
-    flex: 1;
+.uncc-text,
+.grad-text,
+.mitty-text {
+  flex: 1;
 }
-.mitty{
-    display: flex;
-    align-items: flex-start;
+/* .uncc {
+  flex-direction: row-reverse;
 }
-.mitty-text{
-    flex: 1;
-}
+
 /* Timeline code was learned from CodingDesign "Simple Interactive Timeline Using Vanilla Javascript" */
-:root{
-    --primary-color: #D4C1D3;
+:root {
+  --primary-color: #d4c1d3;
 }
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
-    box-sizing: border-box;
-   /* font-family: ; */
+  box-sizing: border-box;
+  /* font-family: ; */
 }
-.timeline-wrapper::-webkit-scrollbar{
-    display: none;
+.timeline-wrapper::-webkit-scrollbar {
+  display: none;
 }
 
-.timeline-wrapper{
-    position: relative;
-    max-width: 100vw;
-    height: 88vh;
+.timeline-wrapper {
+  position: relative;
+  max-width: 100vw;
+  height: 88vh;
 
-   /* background-color: aqua; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    overflow-X: auto;
+  overflow-x: auto;
 }
 
 .timeline {
-    position: absolute;
-    height: .12rem;
-    padding: 0 4rem;
-    background-color: black; /*border of the timeline*/
-    list-style-type: none;
+  position: absolute;
+  height: 0.12rem;
+  padding: 0 4rem;
+  background-color: black; /*border of the timeline*/
+  list-style-type: none;
 
-    --scale: 1;
+  --scale: 1;
 
-    display: flex;
+  display: flex;
 }
-.timeline li { /*adjusts the dots on the timeline */
-    position: relative;
-    width: 30rem; 
-    background-color: black;
+.timeline li {
+  /*adjusts the dots on the timeline */
+  position: relative;
+  width: 30rem;
+  background-color: black;
 }
-.timeline li::before, 
+.timeline li::before,
 .timeline li:after,
 .timeline li .title,
-.info{
-    position: absolute;
-    content: "";
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%) scale(var(--scale));
-    transition: .5s ease;
+.info {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(var(--scale));
+  transition: 0.5s ease;
 }
 .timeline li::before {
-    top: 1rem;
+  top: 1rem;
 
-    display: inline-block;
-    width: 0.12rem;
-    height: 1rem;
-    background-color: pink;
+  display: inline-block;
+  width: 0.12rem;
+  height: 1rem;
+  background-color: pink;
 }
-.timeline li:nth-child(even)::before{
-    top: -1rem;
-}
-
-.timeline li:hover::before{
-    background-color: var(--var-color);
-
+.timeline li:nth-child(even)::before {
+  top: -1rem;
 }
 
-.timeline li::after{
-    content: attr(data-semester);
-    top: -3.4rem;
+.timeline li:hover::before {
+  background-color: var(--var-color);
 }
-.timeline li:nth-child(odd)::after{
-    top: 3.4rem;
+
+.timeline li::after {
+  content: attr(data-semester);
+  top: -3.4rem;
+}
+.timeline li:nth-child(odd)::after {
+  top: 3.4rem;
 }
 
 .timeline li:hover:after,
-.timeline li .title{
-    color: var(--primary-color);
+.timeline li .title {
+  color: var(--primary-color);
 }
-.timeline li .title{
-    top: 2.4rem;
+.timeline li .title {
+  top: 2.4rem;
 
-    font: 600 1.1rem 'poppins', sans-serif;
-    white-space: pre;
+  font: 600 1.1rem "poppins", sans-serif;
+  white-space: pre;
 
-    opacity: 0;
+  opacity: 0;
 }
 
-.timeline li:nth-child(odd) >.title{
-    top: -2.4rem;
+.timeline li:nth-child(odd) > .title {
+  top: -2.4rem;
 }
-.timeline li:hover .title{
-    opacity: 1;
+.timeline li:hover .title {
+  opacity: 1;
 }
 .info {
-    width: 1.3rem;
-    height: 1.3rem;
-    background-color: #888;
-    color: white;
-    border-radius: 50%;
+  width: 1.3rem;
+  height: 1.3rem;
+  background-color: #888;
+  color: white;
+  border-radius: 50%;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 
-    overflow: hidden;
-    transition: 1s ease;
+  overflow: hidden;
+  transition: 1s ease;
 }
 
 .timeline li:hover .info {
-    background-color: var(--primary-color);
-    --scale: 1.2;
-    cursor: pointer;
-    z-index: 100;
+  background-color: var(--primary-color);
+  --scale: 1.2;
+  cursor: pointer;
+  z-index: 100;
 }
 
 .info.show {
+  width: 22rem;
+  height: auto;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-image: linear-gradient(45deg, var(--primary-color), indigo);
 
-    width: 22rem;
-    height: auto;
-    border-radius: 1rem;
-    padding: 1rem;
-    background-image: linear-gradient(45deg, var(--primary-color), indigo);
+  box-shadow: 0 0.1rem 0.4rem #0004;
 
-    box-shadow: 0 .1rem .4rem #0004;
-
-    z-index: 100;
-
+  z-index: 100;
 }
 
-.info h3{
-    text-transform: capitalize;
+.info h3 {
+  text-transform: capitalize;
 }
 
-.info p{
-    background-color: #fff3;
-    padding: .5rem;
-    margin-bottom: 1rem;
-    border-radius: 1rem;
+.info p {
+  background-color: #fff3;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
 
-    margin-left: 0.7rem;
+  margin-left: 0.7rem;
 }
 
-.info.show p{
-    margin-left: 0;   
+.info.show p {
+  margin-left: 0;
 }
 
-.info .close{
-    align-self: flex-start;
-    background-color: skyblue;
+.info .close {
+  align-self: flex-start;
+  background-color: skyblue;
 
-    padding: .5rem .8rem;
-    border-radius: 2rem;
-    font-size: 1rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 2rem;
+  font-size: 1rem;
 }
