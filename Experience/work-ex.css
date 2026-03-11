@@ -33,6 +33,11 @@ body {
   border-style: solid;
   overflow: auto;
 }
+section {
+  border: 1px;
+  border-style: solid;
+  overflow: hidden;
+}
 body h1,
 h2,
 h3,
@@ -40,12 +45,18 @@ p,
 small {
   padding-left: 10px;
 }
-section {
-  border: 1px;
-  border-style: solid;
-  overflow: hidden;
+.intro-photo img {
+  height: 200px;
+  width: 200px;
+  display: block;
+  float: right;
 }
-.work-photo img {
-  height: 100px;
-  width: 100px;
+.other-jobs {
+  display: flex;
+}
+.intro {
+  display: grid;
+  grid-template-columns: auto, auto;
+}
+.intro-txt {
 }
