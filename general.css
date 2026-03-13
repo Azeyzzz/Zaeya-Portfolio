@@ -1,0 +1,51 @@
+/* General CSS that all webpages will use. This will make the various css files less redundant as I can pull from this general document.
+File will replace the footer file as footer will now be included in this file
+File will feature nav-bar, footer and various section elements that are found among all the files so far */
+
+/* Nav-Bar */
+.nav-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #d4c1d3;
+  display: flex;
+}
+.nav-bar ul li a {
+  display: block;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.nav-bar ul li a:hover {
+  background-color: #afb1da;
+}
+.nav-bar ul li a.active {
+  background-color: #afb1da;
+}
+.nav-bar {
+  padding-top: 0;
+  width: 100%;
+  float: left;
+}
+
+/* common body css properties */
+body {
+  background-color: #f3e7e4;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+.mc {
+  border: 1px;
+  border-style: solid;
+  overflow: auto;
+}
+section {
+  border: 1px;
+  border-style: solid;
+  overflow: hidden;
+}
+/* Footer */
+.foot {
+  background-color: #d4c1d3;
+}
