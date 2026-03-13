@@ -46,3 +46,25 @@ section {
   border-style: solid;
   overflow: hidden;
 }
+.sec-title {
+  background-color: #d4c1d3;
+  border-top: 5px;
+  border-style: solid;
+}
+.clubs-info {
+  display: flex;
+  background-color: #f3e7e4;
+}
+.tkd {
+  flex: 1 1;
+  border-right: 2px;
+  border-style: solid;
+}
+.cja {
+  flex: 1 1;
+  border-left: 2px;
+  border-style: solid;
+}
+.hobbies {
+  background-color: #f3e7e4;
+}

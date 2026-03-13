@@ -52,7 +52,11 @@ small {
   float: right;
 }
 .other-jobs {
+  background-color: #d4c1d3;
+}
+.other-jobs-info {
   display: flex;
+  background-color: #f3e7e4;
 }
 .intro {
   display: grid;
