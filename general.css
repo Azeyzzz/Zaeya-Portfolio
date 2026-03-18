@@ -29,21 +29,29 @@ File will feature nav-bar, footer and various section elements that are found am
 }
 
 /* common body css properties */
+body h1,
+h2,
+h3,
+p,
+small {
+  padding-left: 10px;
+}
 body {
   background-color: #f3e7e4;
   color: black;
   margin: 0;
   padding: 0;
 }
-.mc {
-  border: 1px;
-  border-style: solid;
-  overflow: auto;
-}
 section {
   border: 1px;
   border-style: solid;
   overflow: hidden;
+}
+.sec-title {
+  background-color: #d4c1d3;
+  border-top: 2px;
+  border-bottom: 2px;
+  border-style: solid;
 }
 /* Footer */
 .foot {

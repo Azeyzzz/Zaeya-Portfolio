@@ -1,79 +1,89 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>My Education</title>
-    <link href="./education.css" rel="stylesheet">
+    <link href="./education.css" rel="stylesheet" />
     <link href="../general.css" rel="stylesheet" />
     <script src="./education.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Spectral' rel='stylesheet'>
-</head>
-<style>
+    <link
+      href="https://fonts.googleapis.com/css?family=Spectral"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
     button,
     body {
-        font-family: 'Spectral';
-        font-size: 22px;
+      font-family: "Spectral";
+      font-size: 22px;
     }
-</style>
-<header>
+  </style>
+  <header>
     <section class="nav-bar">
-    <ul>
+      <ul>
         <li><a href="../Home/home.html">Home</a></li>
         <li><a href="../Bio/about-me.html">About Me</a></li>
         <li><a href="../Experience/work-ex.html">Work Experience</a></li>
-        <li><a class="active" href="../Experience/education.html">Education</a></li>
+        <li>
+          <a class="active" href="../Experience/education.html">Education</a>
+        </li>
         <li><a href="../Portfolio/portfolio-hub.html">My Portfolio</a></li>
-    </ul>
+      </ul>
     </section>
-</header>
+  </header>
 
-<body>
+  <body>
     <main class="mc">
-        <section class="schools">
-                <h1>My Education</h1>
-                <br>
-            <div class="grad-uncc">
-                <div class="grad-text">
-                    <h3>University of North Carolina at Charlotte</h3>
-                    <address>Charlotte, NC</address>
-                    <p>Fall 2026 - Spring 2028</p>
-                    <p> MS Cybersecurity</p>
-                </div>
-                <div class="grad-img">
-                    <img src="./exp-photos/grad-photo.png" alt="UNCC Dubious Center from UNCC Website">
-                </div>
-            </div>
-            <div class="uncc">
-                <div class="uncc-text">
-                    <h3>University of North Carolina at Charlotte</h3>
-                    <address>Charlotte, NC</address>
-                    <p>Fall 2023 - Spring 2027</p>
-                    <p>Major: Computer Science B.S | Concentration: Cybersecurity</p>
-                    <p>Minor: Criminal Justice</p>
-                </div>
-                <div class="uncc-img">
-                    <img src="./exp-photos/uncc-foto.jpg" alt="uncc-photo">
-                </div>
-            </div>
-            <div class="mitty">
-                <div class="mitty-text">
-                    <h3>Archbishop Mitty Highschool</h3>
-                    <address>San Jose, CA</address>
-                    <p>2019-2023</p>
-                </div>
-                <div class="mitty-img">
-                    <img src="./exp-photos/am-foto.jpg" alt="mitty-photo">
-                </div>
-            </div>
-        </section>
-        <section class="course-timeline">
-            <h1>Education Timeline</h1>
-            <div class="timeline-wrapper">
-                <ul class="timeline">
-                    <!--Semester Timeline structure:-->
-                    <!--<li data-semester="Year: Semester-Term">
+      <section class="sec-title">
+        <h1>My Education</h1>
+      </section>
+      <section class="schools">
+        <div class="grad-uncc">
+          <div class="grad-text">
+            <h3>University of North Carolina at Charlotte</h3>
+            <address>Charlotte, NC</address>
+            <p>Fall 2026 - Spring 2028</p>
+            <p>MS Cybersecurity</p>
+          </div>
+          <div class="grad-img">
+            <img
+              src="./exp-photos/grad-photo.png"
+              alt="UNCC Dubious Center from UNCC Website"
+            />
+          </div>
+        </div>
+        <div class="uncc">
+          <div class="uncc-text">
+            <h3>University of North Carolina at Charlotte</h3>
+            <address>Charlotte, NC</address>
+            <p>Fall 2023 - Spring 2027</p>
+            <p>Major: Computer Science B.S | Concentration: Cybersecurity</p>
+            <p>Minor: Criminal Justice</p>
+          </div>
+          <div class="uncc-img">
+            <img src="./exp-photos/uncc-foto.jpg" alt="uncc-photo" />
+          </div>
+        </div>
+        <div class="mitty">
+          <div class="mitty-text">
+            <h3>Archbishop Mitty Highschool</h3>
+            <address>San Jose, CA</address>
+            <p>2019-2023</p>
+          </div>
+          <div class="mitty-img">
+            <img src="./exp-photos/am-foto.jpg" alt="mitty-photo" />
+          </div>
+        </div>
+      </section>
+      <section class="sec-title">
+        <h1>Education Timeline</h1>
+      </section>
+      <section class="course-timeline">
+        <div class="timeline-wrapper">
+          <ul class="timeline">
+            <!--Semester Timeline structure:-->
+            <!--<li data-semester="Year: Semester-Term">
                         <span class="title">Semester Year</span>
                         <div class="info">
                             <h3>Classes:</h3>
@@ -86,98 +96,120 @@
                             <span class="close">Click to Close</span>
                         </div>
                     </li> -->
-                    <li data-semester="Junior Year: Spring 2026">
-                        <span class="title">Spring 2026</span>
-                        <div class="info">
-                            <h3>Classes:</h3>
-                            <p>ITIS 3246: IT Infrast and SEC</p>
-                            <p>ITSC 3155: Software Engineering</p>
-                            <p>ITSC 3688: Computers & Their Impact on Society</p>
-                            <p>CTCM 2530: Interdisciplinary Critical Thinking and Communication Sociology</p>
-                            <p>CJUS 3366: Domestic Violence</p>
-                            <h3>GPA: 3.85</h3>
-                            <span class="close">Click to Close</span>
-                        </div>
-                    </li>
-                    <li data-semester="Junior Year: Fall 2025">
-                        <span class="title">Fall 2025</span>
-                        <div class="info">
-                            <h3>Classes:</h3>
-                            <p>ITSC 3146: Intro Oper Syst & Networking</p>
-                            <p>ITIS 3200: Intro to Info Security & Priv</p>
-                            <p>CJUS 2360: Ethics and the CJUS System</p>
-                            <p>STAT 2122: Intro to Prob & Stat</p>
-                            <p>CJUS 2340: Criminological Theory</p>
-                            <h3>GPA: 3.8</h3>
-                            <span class="close">Click to Close</span>
-                        </div>
-                    </li>
-                    <li data-semester="Sophomore Year: Spring 2025">
-                        <span class="title">Spring 2025</span>
-                        <div class="info">
-                            <h3>Classes:</h3>
-                            <p>MATH 2164: Matrices & Linear Algebra</p>
-                            <p>ITIS 3135: Web App Design and Development</p>
-                            <p>ITSC 2181: Intro to Computer Systems</p>
-                            <p>ITSC 3160: Database Design & Implementation</p>
-                            <p>CJUS 1511: Local Social Science: Foundations of Criminal Justice</p>
-                            <h3>GPA: 4.00</h3>
-                            <span class="close">Click to Close</span>
-                        </div>
-                    </li>
-                    <li data-semester="Sophomore Year: Fall 2024">
-                        <span class="title">Fall 2024</span>
-                        <div class="info">
-                            <h3>Classes:</h3>
-                            <p>MATH 1242: Calculus 2</p>
-                            <p>ITSC 2175: Logic and Algorithms</p>
-                            <p>WGST 21600: Intro to LGBTQ+ Studies</p>
-                            <p>SOCY 1511: Local Social Science: Sociological Approaches to Local Issues</p>
-                            <p>MUSC 1512: Local Arts/Humanities: Music in U.S. Communities</p>
-                            <h3>GPA: 3.80</h3>
-                            <span class="close">Click to Close</span>
-                        </div>
-                    </li>
-                    <li data-semester="Freshmam Year: Spring 2024">
-                        <span class="title">Spring 2024</span>
-                        <div class="info">
-                            <h3>Classes:</h3>
-                            <p>ITSC 2214: Data Structures and Algorithms</p>
-                            <p>METR 1102: Introduction to Meteorology</p>
-                            <p>ITSC 1200: Freshman Seminar</p>
-                            <p>MATH 1241: Calculus 1</p>
-                            <p>ANTH 1501: Global Social Science: Anthropology</p>
-                            <p>LTAM 1502: Global Arts/Humanities Introduction to Latin American History and Culture</p>
-                            <h3>GPA: 4.00</h3>
-                            <span class="close">Click to Close</span>
-                        </div>
-                    </li>
-                    <li data-semester="Freshmam Year: Fall 2023">
-                        <span class="title">Fall 2023</span>
-                        <div class="info">
-                            <h3>Classes:</h3>
-                            <p>ITSC 1213: Intro To Computer Science 2</p>
-                            <p>PSYC 1101: General Psychology</p>
-                            <p>MATH 1103: Precalc Math Science & Engr</p>
-                            <p>WRDS: Writing and Inquiry in Academic Contexts I and II with Studio</p>
-                            <p>ITSC 1200: Freshmen Seminar</p>
-                            <h3>GPA: 3.82</h3>
-                            <span class="close">Click to Close</span>
-                        </div>
-                    </li>
-                </ul>
-        </section>
-        <section class="awards">
-            <h1>Awards and Certificates that I have achieved:</h1>
-            <p>Presidental Honor Roll Fall 2023-Current</p>
-            <p>This award is given to students who are excelling in academics over the course of a semester.
-                The student must maintain a GPA of 3.8 in order to qualify for this award.
-                I have made Presidental Honor Roll every semester so far at UNCC!
-            </p>
-        </section>
+            <li data-semester="Junior Year: Spring 2026">
+              <span class="title">Spring 2026</span>
+              <div class="info">
+                <h3>Classes:</h3>
+                <p>ITIS 3246: IT Infrast and SEC</p>
+                <p>ITSC 3155: Software Engineering</p>
+                <p>ITSC 3688: Computers & Their Impact on Society</p>
+                <p>
+                  CTCM 2530: Interdisciplinary Critical Thinking and
+                  Communication Sociology
+                </p>
+                <p>CJUS 3366: Domestic Violence</p>
+                <h3>GPA: 3.85</h3>
+                <span class="close">Click to Close</span>
+              </div>
+            </li>
+            <li data-semester="Junior Year: Fall 2025">
+              <span class="title">Fall 2025</span>
+              <div class="info">
+                <h3>Classes:</h3>
+                <p>ITSC 3146: Intro Oper Syst & Networking</p>
+                <p>ITIS 3200: Intro to Info Security & Priv</p>
+                <p>CJUS 2360: Ethics and the CJUS System</p>
+                <p>STAT 2122: Intro to Prob & Stat</p>
+                <p>CJUS 2340: Criminological Theory</p>
+                <h3>GPA: 3.8</h3>
+                <span class="close">Click to Close</span>
+              </div>
+            </li>
+            <li data-semester="Sophomore Year: Spring 2025">
+              <span class="title">Spring 2025</span>
+              <div class="info">
+                <h3>Classes:</h3>
+                <p>MATH 2164: Matrices & Linear Algebra</p>
+                <p>ITIS 3135: Web App Design and Development</p>
+                <p>ITSC 2181: Intro to Computer Systems</p>
+                <p>ITSC 3160: Database Design & Implementation</p>
+                <p>
+                  CJUS 1511: Local Social Science: Foundations of Criminal
+                  Justice
+                </p>
+                <h3>GPA: 4.00</h3>
+                <span class="close">Click to Close</span>
+              </div>
+            </li>
+            <li data-semester="Sophomore Year: Fall 2024">
+              <span class="title">Fall 2024</span>
+              <div class="info">
+                <h3>Classes:</h3>
+                <p>MATH 1242: Calculus 2</p>
+                <p>ITSC 2175: Logic and Algorithms</p>
+                <p>WGST 21600: Intro to LGBTQ+ Studies</p>
+                <p>
+                  SOCY 1511: Local Social Science: Sociological Approaches to
+                  Local Issues
+                </p>
+                <p>
+                  MUSC 1512: Local Arts/Humanities: Music in U.S. Communities
+                </p>
+                <h3>GPA: 3.80</h3>
+                <span class="close">Click to Close</span>
+              </div>
+            </li>
+            <li data-semester="Freshmam Year: Spring 2024">
+              <span class="title">Spring 2024</span>
+              <div class="info">
+                <h3>Classes:</h3>
+                <p>ITSC 2214: Data Structures and Algorithms</p>
+                <p>METR 1102: Introduction to Meteorology</p>
+                <p>ITSC 1200: Freshman Seminar</p>
+                <p>MATH 1241: Calculus 1</p>
+                <p>ANTH 1501: Global Social Science: Anthropology</p>
+                <p>
+                  LTAM 1502: Global Arts/Humanities Introduction to Latin
+                  American History and Culture
+                </p>
+                <h3>GPA: 4.00</h3>
+                <span class="close">Click to Close</span>
+              </div>
+            </li>
+            <li data-semester="Freshmam Year: Fall 2023">
+              <span class="title">Fall 2023</span>
+              <div class="info">
+                <h3>Classes:</h3>
+                <p>ITSC 1213: Intro To Computer Science 2</p>
+                <p>PSYC 1101: General Psychology</p>
+                <p>MATH 1103: Precalc Math Science & Engr</p>
+                <p>
+                  WRDS: Writing and Inquiry in Academic Contexts I and II with
+                  Studio
+                </p>
+                <p>ITSC 1200: Freshmen Seminar</p>
+                <h3>GPA: 3.82</h3>
+                <span class="close">Click to Close</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="sec-title">
+        <h1>Awards and Certificates:</h1>
+      </section>
+      <section class="awards">
+        <p>Presidental Honor Roll Fall 2023-Current</p>
+        <p>
+          This award is given to students who are excelling in academics over
+          the course of a semester. The student must maintain a GPA of 3.8 in
+          order to qualify for this award. I have made Presidental Honor Roll
+          every semester so far at UNCC!
+        </p>
+      </section>
     </main>
-</body>
-<footer>
+  </body>
+  <footer>
     <section class="foot">
       <p>Website created by Zaeya DeBenedetti</p>
       <small>Need to Contact Me?</small>

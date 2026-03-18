@@ -1,9 +1,3 @@
-body h1,
-h2,
-p,
-small {
-  padding-left: 10px;
-}
 .schools h1 {
   margin-bottom: -10px;
 }
@@ -47,7 +41,7 @@ h3 {
 :root {
   --primary-color: rgb(136, 63, 136);
 }
-* {
+.course-timeline {
   margin: 0;
   padding: 0;
 

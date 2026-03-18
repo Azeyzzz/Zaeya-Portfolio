@@ -3,28 +3,67 @@ h2,
 h3,
 p,
 small {
-  padding-left: 10px;
   padding-right: 10px;
 }
-.sec-title {
-  background-color: #d4c1d3;
-  border-top: 5px;
+/* About Me CSS */
+.about-intro {
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #f3e7e4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: scroll;
+}
+.about-block {
+  width: 50vw;
+  height: 50vh;
+  border-radius: 1rem;
+  background-image: linear-gradient(45deg, pink, #afb1da);
+  border-left: 2px;
+  border-top: 2px;
   border-style: solid;
 }
+.about-img img {
+  height: 40rem;
+  width: 30rem;
+  float: right;
+  border-radius: 1rem;
+  padding-right: 5px;
+}
+/* Club CSS */
 .clubs-info {
-  display: flex;
   background-color: #f3e7e4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: scroll;
 }
 .tkd {
-  flex: 1 1;
-  border-right: 2px;
+  width: 40rem;
+  height: 35rem;
+  border-radius: 1rem;
+  background-image: linear-gradient(45deg, pink, #afb1da);
+  border: 1px;
   border-style: solid;
+  overflow: auto;
+  box-shadow: 0 0.1rem 0.4rem #0004;
+  overflow-y: scroll;
+  z-index: 100;
 }
 .cja {
-  flex: 1 1;
-  border-left: 2px;
+  width: 40rem;
+  height: 35rem;
+  border-radius: 1rem;
+  background-image: linear-gradient(45deg, #afb1da, pink);
+  border: 1px;
   border-style: solid;
+  overflow: auto;
+  box-shadow: 0 0.1rem 0.4rem #0004;
+  overflow-y: scroll;
+  z-index: 100;
 }
+
+/* Hobby CSS */
 .hobbies {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -38,7 +77,6 @@ small {
   width: 30rem;
   height: 25rem;
   border-radius: 1rem;
-
   background-image: linear-gradient(45deg, pink, #afb1da);
   border: 1px;
   border-style: solid;
