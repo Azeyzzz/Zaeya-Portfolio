@@ -8,11 +8,13 @@ small {
 /* About Me CSS */
 .about-intro {
   padding-left: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   background-color: #f3e7e4;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 10px;
   overflow: scroll;
 }
 .about-block {
@@ -24,9 +26,15 @@ small {
   border-top: 2px;
   border-style: solid;
 }
+.about-block li {
+  font-size: 25px;
+}
+.about-img {
+  grid-row: span 2;
+}
 .about-img img {
-  height: 40rem;
-  width: 30rem;
+  height: 47rem;
+  width: 37rem;
   float: right;
   border-radius: 1rem;
   padding-right: 5px;
@@ -37,51 +45,83 @@ small {
   display: grid;
   grid-template-columns: 1fr 1fr;
   overflow: scroll;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  gap: 100px;
 }
-.tkd {
+.club-block {
   width: 40rem;
   height: 35rem;
   border-radius: 1rem;
   background-image: linear-gradient(45deg, pink, #afb1da);
-  border: 1px;
+  border: 2px;
   border-style: solid;
   overflow: auto;
   box-shadow: 0 0.1rem 0.4rem #0004;
   overflow-y: scroll;
   z-index: 100;
 }
-.cja {
-  width: 40rem;
-  height: 35rem;
-  border-radius: 1rem;
-  background-image: linear-gradient(45deg, #afb1da, pink);
-  border: 1px;
-  border-style: solid;
-  overflow: auto;
-  box-shadow: 0 0.1rem 0.4rem #0004;
-  overflow-y: scroll;
-  z-index: 100;
-}
-
 /* Hobby CSS */
 .hobbies {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding-left: 50px;
-  padding-top: 10px;
-  gap: 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  gap: 15px;
   background-color: #f3e7e4;
   overflow: scroll;
 }
-.hobbies div {
-  width: 30rem;
-  height: 25rem;
+.hobby-block {
+  width: 27.5rem;
+  height: 30rem;
   border-radius: 1rem;
   background-image: linear-gradient(45deg, pink, #afb1da);
-  border: 1px;
+  border: 2px;
   border-style: solid;
   overflow: auto;
   box-shadow: 0 0.1rem 0.4rem #0004;
   overflow-y: scroll;
   z-index: 100;
+}
+.gamja,
+.biscoff,
+.curry {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px;
+  padding: 0px;
+}
+.gamja-jorim,
+.biscoff-creami,
+.yellow-curry {
+  height: 8rem;
+  width: 8rem;
+}
+.video-games p,
+.cooking p,
+.music p {
+  border-radius: 10px;
+  border: 2px;
+  border-style: solid;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 30px;
+}
+.mar {
+  background-color: #c1ff02;
+}
+.ow {
+  background-color: #fa9c1e;
+}
+.p5r {
+  background-color: #d92930;
+}
+.mr {
+  background-color: #f3d02d;
+}
+.h2 {
+  background-color: #eafff3;
 }

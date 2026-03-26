@@ -26,6 +26,8 @@ File will feature nav-bar, footer and various section elements that are found am
   padding-top: 0;
   width: 100%;
   float: left;
+  border-top: 2px;
+  border-style: solid;
 }
 
 /* common body css properties */
