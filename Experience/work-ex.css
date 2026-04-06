@@ -5,20 +5,86 @@ p,
 small {
   padding-left: 10px;
 }
-.intro-photo img {
-  height: 200px;
-  width: 200px;
-  display: block;
-  float: right;
+.head2 h2 {
+  border-bottom: 1px;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-style: solid;
+  margin-top: 0px;
+  padding-top: 5px;
+  background-color: #fff3;
+}
+.w-block0 {
+  width: 47vw;
+  height: 30vh;
+  border-radius: 1rem;
+  background-image: linear-gradient(45deg, pink, #afb1da);
+  border-left: 2px;
+  border-top: 2px;
+  border-style: solid;
+}
+.w-block1 {
+  width: 47vw;
+  height: 85vh;
+  border-radius: 1rem;
+  background-image: linear-gradient(45deg, pink, #afb1da);
+  border-left: 2px;
+  border-top: 2px;
+  border-style: solid;
+  overflow: scroll;
+}
+.w-block2 {
+  width: 47vw;
+  height: 50vh;
+  border-radius: 1rem;
+  background-image: linear-gradient(45deg, pink, #afb1da);
+  border-left: 2px;
+  border-top: 2px;
+  border-style: solid;
+  overflow: scroll;
+}
+.publix .description {
+  margin-top: -325px;
+}
+.publix {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #f3e7e4;
+  overflow: scroll;
+}
+.publix-img img {
+  height: 75vh;
+  width: 47vw;
+  border-radius: 1rem;
+  border-left: 2px;
+  border-top: 2px;
+  border-style: solid;
 }
 .other-jobs {
   background-color: #d4c1d3;
 }
 .other-jobs-info {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   background-color: #f3e7e4;
 }
-.intro {
-  display: grid;
-  grid-template-columns: auto, auto;
+
+.i-block,
+.d-block {
+  border-radius: 1rem;
+  background-image: linear-gradient(45deg, pink, #afb1da);
+  border-left: 2px;
+  border-top: 2px;
+  border-style: solid;
+  overflow-wrap: break-word;
+  margin-top: 15px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.skills {
+  margin-bottom: 15px;
 }
