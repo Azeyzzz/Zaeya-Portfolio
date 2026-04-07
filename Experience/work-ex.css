@@ -23,7 +23,14 @@ small {
   border-left: 2px;
   border-top: 2px;
   border-style: solid;
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
+
+.w-block0:hover {
+  transform: scale(1.05);
+}
+
 .w-block1 {
   width: 47vw;
   height: 85vh;
@@ -33,7 +40,14 @@ small {
   border-top: 2px;
   border-style: solid;
   overflow: scroll;
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
+
+.w-block1:hover {
+  transform: scale(1.05);
+}
+
 .w-block2 {
   width: 47vw;
   height: 50vh;
@@ -43,6 +57,12 @@ small {
   border-top: 2px;
   border-style: solid;
   overflow: scroll;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.w-block2:hover {
+  transform: scale(1.05);
 }
 .publix .description {
   margin-top: -325px;
@@ -84,6 +104,13 @@ small {
   margin-top: 15px;
   margin-right: 20px;
   margin-left: 20px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.i-block:hover,
+.d-block:hover {
+  transform: scale(1.05);
 }
 .skills {
   margin-bottom: 15px;
