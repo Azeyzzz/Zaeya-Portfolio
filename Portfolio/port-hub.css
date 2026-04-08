@@ -35,3 +35,30 @@
 .port-block0:hover {
   transform: scale(1.05);
 }
+button {
+  background-color: #fff3;
+  color: black;
+  border: 2px solid #0003;
+  border-radius: 25px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  margin: 8px 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+.port-block0 h2 {
+  border-bottom: 1px;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-style: solid;
+  margin-top: 0px;
+  padding-top: 5px;
+  background-color: #fff3;
+}

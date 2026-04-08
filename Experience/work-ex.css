@@ -1,6 +1,7 @@
 body h1,
 h2,
 h3,
+h4,
 p,
 small {
   padding-left: 10px;
@@ -92,7 +93,16 @@ small {
   grid-template-columns: 1fr 1fr;
   background-color: #f3e7e4;
 }
-
+.other-jobs-info h2 {
+  border-bottom: 1px;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-style: solid;
+  margin-top: 0px;
+  padding-top: 5px;
+  background-color: #fff3;
+}
 .i-block,
 .d-block {
   border-radius: 1rem;

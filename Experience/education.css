@@ -55,6 +55,16 @@ h3 {
 .mitty-text {
   flex: 0 0 auto; /* or 0 0 40vw */
 }
+.t-block h2 {
+  border-bottom: 1px;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-style: solid;
+  margin-top: 0px;
+  padding-top: 5px;
+  background-color: #fff3;
+}
 .awards h1 {
   padding-top: 20px;
 }
@@ -262,4 +272,13 @@ h3 {
   padding: 0.5rem 0.8rem;
   border-radius: 2rem;
   font-size: 1rem;
+}
+.class-title {
+  border-bottom: 1px;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-style: solid;
+  margin-top: 0px;
+  padding-top: 5px;
 }
