@@ -19,6 +19,9 @@
   margin-top: 15px;
   margin-bottom: 15px;
 }
+.port-block0 h4 {
+  margin: 10px;
+}
 .current-proj > .port-block0:nth-child(odd),
 .past-proj > .port-block0:nth-child(odd) {
   margin-left: 10px;
