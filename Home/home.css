@@ -112,35 +112,6 @@ a {
   padding-top: 5px;
   background-color: #fff3;
 }
-/* Button Styling */
-button {
-  background-color: #fff3;
-  color: black;
-  border: 2px solid #0003;
-  border-radius: 25px;
-  padding: 12px 24px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition:
-    background-color 0.3s ease,
-    transform 0.3s ease;
-  text-decoration: none;
-  display: inline-block;
-  margin: 8px 4px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-}
-
-button:hover {
-  background-color: #fff6;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.22);
-}
-
-button:active {
-  transform: translateY(0);
-}
-
 /* Button Container Alignment */
 .about-me p:last-of-type,
 .exp p {
@@ -161,4 +132,7 @@ button:active {
   display: flex;
   justify-content: center;
   margin-top: 15px;
+}
+button {
+  margin: 8px 4px;
 }

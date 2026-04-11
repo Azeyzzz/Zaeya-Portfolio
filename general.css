@@ -55,6 +55,32 @@ section {
   border-bottom: 2px;
   border-style: solid;
 }
+/* button styling */
+button {
+  background-color: #fff3;
+  color: black;
+  border: 2px solid #0003;
+  border-radius: 25px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+button:hover {
+  background-color: #fff6;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.22);
+}
+
+button:active {
+  transform: translateY(0);
+}
 /* Footer */
 .foot {
   background-color: #d4c1d3;
