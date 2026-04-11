@@ -83,18 +83,5 @@ button:active {
 }
 /* Footer */
 .foot {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   background-color: #d4c1d3;
-  align-items: center;
-  text-align: center;
-}
-
-.foot a {
-  color: black;
-  text-decoration: none;
-}
-
-.foot a:hover {
-  text-decoration: underline;
 }
