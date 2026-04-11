@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const blocks = Array.from(container.querySelectorAll(".port-block0"));
 
     blocks.sort((a, b) => {
-      const aText = a.querySelector(".project-date")?.textContent?.trim() ?? "";
-      const bText = b.querySelector(".project-date")?.textContent?.trim() ?? "";
+      const aText = a.querySelector(".project-date")?.dataset.date ?? "";
+      const bText = b.querySelector(".project-date")?.dataset.date ?? "";
       return new Date(bText) - new Date(aText);
     });
 
