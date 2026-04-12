@@ -43,7 +43,8 @@ small {
   width: 37rem;
   float: right;
   border-radius: 1rem;
-  padding-right: 5px;
+  border: 2px;
+  border-style: solid;
 }
 /* Club CSS */
 .clubs-info {
