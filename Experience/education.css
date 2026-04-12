@@ -5,8 +5,12 @@
 h2,
 p,
 address,
-h3 {
+h3,
+h4 {
   padding-left: 10px;
+}
+.schools li {
+  margin-right: 10px;
 }
 .edu-title {
   border: 0px;
@@ -14,10 +18,12 @@ h3 {
   border-style: solid;
 }
 .schools img {
-  height: 60vh;
-  width: 50vw;
+  height: 22rem;
+  width: 48vw;
   display: block;
-  border-left: 5px;
+  border-radius: 1rem;
+  margin-top: 40px;
+  border: 2px;
   border-style: solid;
 }
 .t-block {
@@ -37,22 +43,23 @@ h3 {
   margin-left: 1vw;
   margin-right: 1vw;
 }
-
+.mitty {
+  margin-bottom: 40px;
+}
 .t-block:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 .grad-uncc,
 .uncc,
-.mitty {
+.mitty,
+.cmu-ssi {
   display: flex;
   align-items: flex-start;
-  border-right: 3px;
-  border-bottom: 1px;
-  border-style: solid;
 }
 .grad-text,
 .uncc-text,
-.mitty-text {
+.mitty-text,
+.cmu-text {
   flex: 0 0 auto; /* or 0 0 40vw */
 }
 .t-block h2 {
@@ -105,7 +112,16 @@ h3 {
   transition: transform 0.3s ease;
   cursor: pointer;
 }
-
+.a-block h2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-decoration: none;
+}
+.a-block h3 {
+  padding-left: 10px;
+  padding-top: 18px;
+}
 .a-block:hover {
   transform: scale(1.05);
 }
@@ -233,7 +249,9 @@ h3 {
   cursor: pointer;
   z-index: 100;
 }
-
+.info.show p {
+  margin-top: 0;
+}
 .info.show {
   width: 25rem;
   height: 25rem;
