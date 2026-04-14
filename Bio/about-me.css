@@ -17,6 +17,16 @@ small {
   gap: 10px;
   overflow: scroll;
 }
+.mc h2 {
+  border-bottom: 1px;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-style: solid;
+  margin-top: 0px;
+  padding-top: 5px;
+  background-color: #fff3;
+}
 .about-block {
   width: 50vw;
   height: 50vh;
@@ -27,8 +37,8 @@ small {
   border-style: solid;
   transition: transform 0.3s ease;
   cursor: pointer;
+  overflow: scroll;
 }
-
 .about-block:hover {
   transform: scale(1.05);
 }
@@ -43,7 +53,57 @@ small {
   width: 37rem;
   float: right;
   border-radius: 1rem;
-  padding-right: 5px;
+  border: 2px;
+  border-style: solid;
+}
+.contact-info li {
+  padding-bottom: 10px;
+}
+/* Social Logos */
+.social-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.social-logo a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #1f2937;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 30px;
+  border: 2px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+.social-logo a:hover {
+  background: rgba(255, 255, 255, 0.6);
+  text-decoration: underline;
+}
+
+.github-img {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+.linkedin-img {
+  width: 32px;
+  height: 28px;
+  display: block;
+}
+.email-img {
+  width: 35px;
+  height: 28px;
+  display: block;
+}
+.resume-img {
+  width: 35px;
+  height: 28px;
+  display: block;
 }
 /* Club CSS */
 .clubs-info {
@@ -55,7 +115,7 @@ small {
   padding-right: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
-  gap: 100px;
+  gap: 20px;
 }
 .club-block {
   width: 40rem;
@@ -106,7 +166,11 @@ small {
 }
 .gamja,
 .biscoff,
-.curry {
+.curry,
+.vg,
+.mus,
+.f1,
+.popm {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0px;
@@ -114,13 +178,19 @@ small {
 }
 .gamja-jorim,
 .biscoff-creami,
-.yellow-curry {
+.yellow-curry,
+.vg-img,
+.mus-img,
+.f1-img,
+.popm-img {
   height: 8rem;
   width: 8rem;
 }
 .video-games p,
 .cooking p,
-.music p {
+.music p,
+.formula1 p,
+.popmart p {
   border-radius: 10px;
   border: 2px;
   border-style: solid;
@@ -129,43 +199,44 @@ small {
   font-size: 30px;
   /* background-color: #fff3; */
 }
-.mar {
-  background-color: #c1ff02;
-}
-.ow {
-  background-color: #fa9c1e;
-}
-.p5r {
-  background-color: #d92930;
-}
-.mr {
-  background-color: #f3d02d;
-}
-.h2 {
-  background-color: #eafff3;
-}
-/* Enhanced Cooking Block Styles */
-.cooking h2 {
+/* Enhanced Block Styles */
+.cooking h2,
+.video-games h2,
+.music h2,
+.formula1 h2,
+.popmart h2 {
   text-align: center;
   margin-bottom: 1rem;
   color: black;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.cooking ul {
+.cooking ul,
+.video-games ul,
+.music ul,
+.formula1 ul,
+.popmart ul {
   margin-bottom: 1.5rem;
   padding-left: 1.5rem;
   list-style-position: outside;
 }
 
-.cooking ul li {
+.cooking ul li,
+.video-games ul li,
+.music ul li,
+.formula1 ul li,
+.popmart ul li {
   margin-bottom: 0.5rem;
   line-height: 1.6;
   padding-left: 0.5rem;
   position: relative;
 }
 
-.cooking p {
+.cooking p,
+.video-games p,
+.music p,
+.formula1 p,
+.popmart p {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -179,18 +250,32 @@ small {
   transition: all 0.3s ease;
 }
 
-.cooking p:hover {
+.cooking p:hover,
+.video-games p:hover,
+.music p:hover,
+.formula1 p:hover,
+.popmart p:hover {
   background: rgba(255, 255, 255, 0.2);
   transform: translateY(-2px);
 }
 
-.cooking img {
+.cooking img,
+.video-games img,
+.music img,
+.formula1 img,
+.popmart img {
   border-radius: 8px;
   margin-bottom: 0.5rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
 }
-
-.cooking img:hover {
+.video-games img {
+  object-fit: contain;
+}
+.cooking img:hover,
+.video-games img:hover,
+.music img:hover,
+.formula1 img:hover,
+.popmart img:hover {
   transform: scale(1.05);
 }
