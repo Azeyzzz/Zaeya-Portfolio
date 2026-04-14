@@ -75,20 +75,16 @@ small {
   font-weight: 600;
   padding: 2px 8px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.1);
   font-size: 30px;
+  border: 2px solid rgba(255, 255, 255, 0.3) !important;
 }
 
 .social-logo a:hover {
   background: rgba(255, 255, 255, 0.6);
   text-decoration: underline;
 }
-.github-logo a {
-  background: rgba(255, 255, 255, 0.35);
-}
-.linkedin-logo a {
-  background: rgba(255, 255, 255, 0.35);
-}
+
 .github-img {
   width: 40px;
   height: 40px;
@@ -104,6 +100,11 @@ small {
   height: 28px;
   display: block;
 }
+.resume-img {
+  width: 35px;
+  height: 28px;
+  display: block;
+}
 /* Club CSS */
 .clubs-info {
   background-color: #f3e7e4;
@@ -114,7 +115,7 @@ small {
   padding-right: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
-  gap: 100px;
+  gap: 20px;
 }
 .club-block {
   width: 40rem;
@@ -167,7 +168,9 @@ small {
 .biscoff,
 .curry,
 .vg,
-.mus {
+.mus,
+.f1,
+.popm {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0px;
@@ -177,13 +180,17 @@ small {
 .biscoff-creami,
 .yellow-curry,
 .vg-img,
-.mus-img {
+.mus-img,
+.f1-img,
+.popm-img {
   height: 8rem;
   width: 8rem;
 }
 .video-games p,
 .cooking p,
-.music p {
+.music p,
+.formula1 p,
+.popmart p {
   border-radius: 10px;
   border: 2px;
   border-style: solid;
@@ -192,10 +199,12 @@ small {
   font-size: 30px;
   /* background-color: #fff3; */
 }
-/* Enhanced Cooking Block Styles */
+/* Enhanced Block Styles */
 .cooking h2,
 .video-games h2,
-.music h2 {
+.music h2,
+.formula1 h2,
+.popmart h2 {
   text-align: center;
   margin-bottom: 1rem;
   color: black;
@@ -204,7 +213,9 @@ small {
 
 .cooking ul,
 .video-games ul,
-.music ul {
+.music ul,
+.formula1 ul,
+.popmart ul {
   margin-bottom: 1.5rem;
   padding-left: 1.5rem;
   list-style-position: outside;
@@ -212,7 +223,9 @@ small {
 
 .cooking ul li,
 .video-games ul li,
-.music ul li {
+.music ul li,
+.formula1 ul li,
+.popmart ul li {
   margin-bottom: 0.5rem;
   line-height: 1.6;
   padding-left: 0.5rem;
@@ -221,7 +234,9 @@ small {
 
 .cooking p,
 .video-games p,
-.music p {
+.music p,
+.formula1 p,
+.popmart p {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -237,14 +252,18 @@ small {
 
 .cooking p:hover,
 .video-games p:hover,
-.music p:hover {
+.music p:hover,
+.formula1 p:hover,
+.popmart p:hover {
   background: rgba(255, 255, 255, 0.2);
   transform: translateY(-2px);
 }
 
 .cooking img,
 .video-games img,
-.music img {
+.music img,
+.formula1 img,
+.popmart img {
   border-radius: 8px;
   margin-bottom: 0.5rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
@@ -255,6 +274,8 @@ small {
 }
 .cooking img:hover,
 .video-games img:hover,
-.music img:hover {
+.music img:hover,
+.formula1 img:hover,
+.popmart img:hover {
   transform: scale(1.05);
 }
