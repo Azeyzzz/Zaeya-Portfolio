@@ -166,7 +166,8 @@ small {
 .gamja,
 .biscoff,
 .curry,
-.vg {
+.vg,
+.mus {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0px;
@@ -175,7 +176,8 @@ small {
 .gamja-jorim,
 .biscoff-creami,
 .yellow-curry,
-.vg-img {
+.vg-img,
+.mus-img {
   height: 8rem;
   width: 8rem;
 }
@@ -248,7 +250,9 @@ small {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
 }
-
+.video-games img {
+  object-fit: contain;
+}
 .cooking img:hover,
 .video-games img:hover,
 .music img:hover {
