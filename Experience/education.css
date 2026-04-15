@@ -96,7 +96,7 @@ h4 {
   padding-bottom: 15px;
   gap: 15px;
   background-color: #f3e7e4;
-  overflow: scroll;
+  overflow: auto;
 }
 .a-block {
   width: 27.5rem;
@@ -299,4 +299,68 @@ h4 {
   border-style: solid;
   margin-top: 0px;
   padding-top: 5px;
+}
+
+@media (max-width: 1200px) {
+  .schools img,
+  .t-block {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .t-block {
+    min-height: 260px;
+  }
+
+  .grad-uncc,
+  .uncc,
+  .mitty,
+  .cmu-ssi {
+    flex-direction: column;
+    gap: 12px;
+    padding: 0 10px;
+  }
+
+  .a-block {
+    width: 100%;
+    height: auto;
+    min-height: 150px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .awards {
+    grid-template-columns: 1fr 1fr;
+    overflow: visible;
+    padding-right: 20px;
+  }
+
+  .timeline li {
+    width: 18rem;
+  }
+
+  .info.show {
+    width: min(88vw, 24rem);
+    height: min(72vh, 24rem);
+  }
+}
+
+@media (max-width: 700px) {
+  .awards {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-wrapper {
+    height: 72vh;
+  }
+
+  .timeline li {
+    width: 14rem;
+  }
+
+  .info.show {
+    width: min(92vw, 22rem);
+    height: min(70vh, 22rem);
+  }
 }
