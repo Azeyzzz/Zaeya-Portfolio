@@ -23,7 +23,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  overflow: scroll;
+  overflow: auto;
 }
 .port-image0,
 .linux-proj {
@@ -63,4 +63,30 @@
 
 .port-block0 button {
   margin-top: 8px; /* remove side push */
+}
+
+@media (max-width: 1024px) {
+  .current-proj,
+  .past-proj {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    padding: 0 12px;
+  }
+
+  .port-block0 {
+    height: auto;
+    min-height: 360px;
+    overflow: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .current-proj,
+  .past-proj {
+    grid-template-columns: 1fr;
+  }
+
+  .port-block0:hover {
+    transform: scale(1.01);
+  }
 }

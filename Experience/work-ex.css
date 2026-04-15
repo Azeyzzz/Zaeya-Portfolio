@@ -40,7 +40,7 @@ small {
   border-left: 2px;
   border-top: 2px;
   border-style: solid;
-  overflow: scroll;
+  overflow: auto;
   transition: transform 0.3s ease;
   cursor: pointer;
 }
@@ -57,7 +57,7 @@ small {
   border-left: 2px;
   border-top: 2px;
   border-style: solid;
-  overflow: scroll;
+  overflow: auto;
   transition: transform 0.3s ease;
   cursor: pointer;
 }
@@ -75,7 +75,7 @@ small {
   padding-top: 15px;
   padding-bottom: 15px;
   background-color: #f3e7e4;
-  overflow: scroll;
+  overflow: auto;
 }
 .publix-img img {
   height: 75vh;
@@ -124,4 +124,47 @@ small {
 }
 .skills {
   margin-bottom: 15px;
+}
+
+@media (max-width: 1200px) {
+  .w-block0,
+  .w-block1,
+  .w-block2 {
+    width: 100%;
+    height: auto;
+    min-height: 260px;
+  }
+
+  .publix-img img {
+    width: 100%;
+    height: auto;
+    max-height: 70vh;
+  }
+
+  .publix .description {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .publix {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    overflow: visible;
+    padding-right: 20px;
+  }
+
+  .other-jobs-info {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .i-block:hover,
+  .d-block:hover,
+  .w-block0:hover,
+  .w-block1:hover,
+  .w-block2:hover {
+    transform: scale(1.01);
+  }
 }
