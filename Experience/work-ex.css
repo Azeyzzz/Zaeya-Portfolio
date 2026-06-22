@@ -26,6 +26,7 @@ small {
   border-style: solid;
   transition: transform 0.3s ease;
   cursor: pointer;
+  overflow: auto;
 }
 
 .w-block0:hover {

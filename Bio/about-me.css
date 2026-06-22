@@ -49,12 +49,13 @@ small {
   grid-row: span 2;
 }
 .about-img img {
-  height: 47rem;
+  height: 42.2rem;
   width: 37rem;
   float: right;
   border-radius: 1rem;
   border: 2px;
   border-style: solid;
+  object-fit: cover;
 }
 .contact-info li {
   padding-bottom: 10px;

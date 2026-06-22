@@ -36,6 +36,7 @@ section {
   display: block;
   border: 2px;
   border-style: solid;
+  object-fit: cover;
 }
 .h-block0 {
   width: min(45vw, 520px);
